@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Loader - Enhanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" aria-live="polite">
+    <article class="card" id="card" role="article" aria-busy="true" aria-label="Loading content...">
+      <div class="card-header animated-bg" id="header"></div>
+      <section class="card-body">
+        <h3 class="animated-bg animated-text" id="title">&nbsp;</h3>
+        <p class="animated-bg animated-text" id="excerpt">&nbsp;</p>
+        <footer class="author">
+          <div class="profile-img animated-bg" id="profile-img"></div>
+          <div class="author-info">
+            <strong class="animated-bg animated-text" id="name">&nbsp;</strong>
+            <small class="animated-bg animated-text" id="date">&nbsp;</small>
+          </div>
+        </footer>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

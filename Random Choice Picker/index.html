@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Choice Picker</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h3>Enter choices separated by a comma ( , )<br>Press Enter or click "Pick Random"</h3>
+
+    <div class="input-area">
+      <textarea id="textarea" aria-label="Choice input" placeholder="e.g. Apple, Banana, Mango..."></textarea>
+      <button id="pickButton" disabled>🎯 Pick Random</button>
+      <button id="clearButton">❌ Clear</button>
+    </div>
+
+    <div id="tags" aria-live="polite"></div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+
+</html>

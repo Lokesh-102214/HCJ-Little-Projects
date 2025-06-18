@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.slider-container {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 100px auto; /* Add extra margin for arrows */
+    display: flex;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-radius: 12px;
+}
+
+.slider-text,
+.slider-image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    /* Remove background and color here, handled per-slide */
+}
+
+.slider-text .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    color: #fff;
+    border-radius: 12px 0 0 12px;
+}
+
+.slider-text .slide.active {
+    opacity: 1;
+    position: relative;
+
+}
+
+.slider-text .slide h2,
+.slider-text .slide p {
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.slider-text .slide p {
+    margin-bottom: 0;
+}
+
+.slider-image {
+    width: 65%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slider-image .slide img {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 12px 12px 0;
+}
+
+.arrow {
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(34,34,34,0.8);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+
+.arrow.up {
+    top: -44px; /* Place above the container */
+}
+
+.arrow.down {
+    bottom: -44px;
+     /* Place below the container */
+}
+
+.arrow:hover {
+    background: #111;
+}

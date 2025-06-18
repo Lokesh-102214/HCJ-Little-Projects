@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live User Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Live User Filter</h3>
+      <p>Search by name or location</p>
+      <div class="input-toggle">
+        <input type="text" id="filter" placeholder="Search..." aria-label="User filter" />
+        <button id="toggleMode" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+    <ul id="result" class="user-list" aria-live="polite">
+      <!-- Skeleton loaders will be inserted here -->
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

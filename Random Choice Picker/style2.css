@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  background: #dbbbf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#pickButton {
+  background-color: #1C4F2D;
+  color: white;
+}
+
+#pickButton:disabled {
+  background-color: #ce5374;
+  cursor: not-allowed;
+}
+
+#clearButton {
+  background-color: #9c0d38;
+  color: white;
+}
+
+#tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag {
+  padding: 12px 22px;
+  background-color: orange;
+  border-radius: 9999px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+.tag.highlight {
+  background-color: #2ecc71;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
